@@ -29,7 +29,10 @@ Personal resume website for Nicholas Bradford (AI & Analytics Professional, @Sal
 
 ## Design Decisions
 
-- **Color palette:** Navy (#132743) for trust/authority, teal (#0D9488) for accents, amber (#F59E0B) for CTAs — based on persuasion psychology
-- **Layout:** Timeline with dots/lines for experience section; skill chips instead of bullet lists; education cards with teal left-border
+- **Aesthetic:** Editorial "annual report" — warm cream paper (#F7F3EA), racing green masthead/footer (#17352B), copper accents (#B45309) highlighting all metrics/numbers
+- **Typography:** Fraunces (display serif, headings/name), Newsreader (body serif), IBM Plex Mono (dates, labels, chips, contact links — the "data" voice)
+- **Layout:** CSS-counter section numbering (01–05); numbered two-column profile highlights with top rules; timeline with copper dots/markers for experience; mono uppercase company labels; outlined mono skill chips (certified = filled green); education cards with hard offset shadows; certifications as rule-topped columns
+- **Texture:** Fixed ruled-line background + SVG fractal-noise grain overlay for paper feel
+- **Motion:** CSS-only staggered rise on load (`prefers-reduced-motion` respected); hover micro-interactions on chips, cards, buttons
 - **Print:** `@media print` block strips colors/backgrounds for clean PDF output via Ctrl+P; hides download button and footer
 - **Accessibility:** Semantic HTML, ARIA labels, focus-visible outlines, sufficient contrast ratios
